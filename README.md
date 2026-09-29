@@ -61,7 +61,51 @@ Explain the difference between checked and unchecked exceptions in one or two se
 ##### Question 5
 Given two consecutive catch statements, should the catch statement for the more specific exception appear before the catch statement for the less specific exception? Yes or no?
 
+## Program Output
+Once you have successfully fixed all the compilation errors and the program runs correctly, make sure your output looks similar to the following:
 
+```
+== Writing grades.csv ==
+Wrote 6 lines.
+
+== Appending to grades.csv ==
+Total lines written so far: 8
+
+== Reading and parsing ==
+  line 1 OK: Alice [90, 85, 77]
+  line 2 OK: Bob [72, 88, 95]
+  line 3 skipped (bad number): For input string: "abc"
+  line 4 skipped (invalid): expected a name and at least one score but got 1 field(s): "Dave"
+  line 5 skipped (invalid): name must not be empty
+  line 6 skipped (invalid): score 101 is outside 0-100
+  line 7 OK: Eve [88, 91, 79]
+  line 8 OK: Frank [65, 70, 99]
+Parsing finished. Valid records: 4 (StudentRecord objects created: 4)
+
+== Report ==
+Alice scores=[90, 85, 77] highest=90 average=84
+Bob scores=[72, 88, 95] highest=95 average=85
+Eve scores=[88, 91, 79] highest=91 average=86
+Frank scores=[65, 70, 99] highest=99 average=78
+
+== Unchecked exceptions ==
+ArithmeticException: / by zero
+ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 3 (array is [70, 80, 90])
+NullPointerException: values must not be null
+NullPointerException: called length() on a null String
+NumberFormatException: For input string: "12x"
+IllegalArgumentException: cannot find the max of an empty array
+(finally: unchecked exception demo complete)
+
+== Checked exceptions ==
+FileNotFoundException: does_not_exist.csv (No such file or directory)
+
+== try/finally without try-with-resources ==
+  (finally: reader closed manually)
+First line: "Alice, 90, 85, 77" (length 17)
+```
+
+ 
 
 ## Submission
 Zip the project directory along with your answers in a PDF document, and submit the ZIP file to Canvas.
