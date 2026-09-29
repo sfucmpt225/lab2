@@ -15,35 +15,35 @@ In this lab, you will identify and fix five deliberately introduced compilation 
 
 #### Compilation Error 1
 <details>
-    <summary>Hint</summary>
+    <summary>There is something wrong with the FileManager class's writeLines() method</summary>
 
 
 </details>
 
 #### Compilation Error 2
 <details>
-    <summary>Hint</summary>
+    <summary>There is something wrong with the StatsCalculator class's average() method</summary>
     
 
 </details>
 
 #### Compilation Error 3
 <details>
-    <summary>Hint</summary>
+    <summary>There is something wrong with the FileManager class's readFirstLine() method</summary>
 
 
 </details>
 
 #### Compilation Error 4
 <details>
-    <summary>Hint</summary>
+    <summary>There is something wrong with the RecordParser class's RecordParser() method</summary>
 
 
 </details>
 
 #### Compilation Error 5
 <details>
-    <summary>Hint</summary>
+    <summary>There is something wrong with the StudentRecord class's StudentRecord() method</summary>
 
 
 </details>
