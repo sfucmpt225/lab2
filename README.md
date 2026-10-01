@@ -109,6 +109,7 @@ First line: "Alice, 90, 85, 77" (length 17)
 
 ## Submission
 Zip the project directory along with your answers in a PDF document, and submit the ZIP file to Canvas.
+**Please do not remove any of the build artifacts or the manifest files. Zip the project directory as is.**
 
 ## Rubric
 | Criterion | ✓ Yes (1 pt) | ✗ No (0 pts) |
